@@ -1,20 +1,24 @@
 {
   "name": "school-erp",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Production-ready School ERP Monorepo",
+  "packageManager": "pnpm@10.29.3",
+  "engines": {
+    "node": ">=22.16.0",
+    "pnpm": ">=10.29.3"
+  },
   "scripts": {
+    "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
     "clean": "turbo run clean",
     "prepare": "husky"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.29.3",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
